@@ -35,6 +35,7 @@
         var ctrl = this;
         ctrl.searchTerm = "";
         ctrl.found = [];
+        ctrl.searchClicked = false;
 
         ctrl.getMatchedMenuItems = function () {
             if(ctrl.searchTerm !== "") {
@@ -44,6 +45,8 @@
             } else {
                 ctrl.found = [];
             }
+
+            searchClicked = true;
         }
 
         ctrl.dontWantThisNow = function (index) {
